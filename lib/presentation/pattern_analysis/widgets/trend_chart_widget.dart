@@ -1,3 +1,6 @@
+import 'dart:math';
+import 'package:google_fonts/google_fonts.dart';
+
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
@@ -343,7 +346,8 @@ class _TrendChartWidgetState extends State<TrendChartWidget> {
     // Mock data for demonstration
     return List.generate(24, (index) {
       final baseValue = 50.0;
-      final variation = (index * 3.7).sin() * 20 + (index * 0.5).cos() * 10;
+      final variation = sin(index * 3.7) * 20 + cos(index * 0.5) * 10;
+
       return FlSpot(index.toDouble(), (baseValue + variation).clamp(0, 100));
     });
   }
