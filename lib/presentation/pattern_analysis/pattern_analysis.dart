@@ -1,6 +1,13 @@
+
 import 'dart:math';
 import 'package:google_fonts/google_fonts.dart';
 
+
+import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
+ d0423fe (fix: auto add google_fonts import everywhere)
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sizer/sizer.dart';
