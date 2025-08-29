@@ -1,3 +1,6 @@
+import 'dart:math';
+import 'package:google_fonts/google_fonts.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sizer/sizer.dart';
@@ -138,6 +141,7 @@ final List<Map<String, dynamic>> _mockChartData = List.generate(24, (index) {
   return {
     'time': index,
     'value': 30.0 + sin(index * 2.5) * 25 + cos(index * 0.8) * 15,
+
   };
 });
 
